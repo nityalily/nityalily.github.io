@@ -17,7 +17,7 @@ export const extracurriculars = [
   },
   {
     title: "Orientation ClarkLEADER",
-    note: "Peer-led first-year orientation for incoming engineering students.",
+    note: "Peer leader at the first-year orientation for incoming engineering students.",
   },
   {
     title: "Society of Women in Engineering",
@@ -25,7 +25,7 @@ export const extracurriculars = [
   },
   {
     title: "Dean's List",
-    note: "Recognized for academic excellence, 2025.",
+    note: "Recognized for academic excellence, 2025, 2026.",
   },
   {
     title: "Deloitte Case Competition",

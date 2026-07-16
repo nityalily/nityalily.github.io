@@ -12,7 +12,7 @@ export default function Contact() {
       <Reveal className="card-border rounded-2xl px-6 py-8 text-center sm:px-8">
         <h3 className="text-sm font-semibold">Let&apos;s build something together.</h3>
         <p className="mx-auto mt-2 max-w-md text-sm text-muted">
-          Open to internships, collaborations, and interesting problems. Reach out any time.
+          Open to mentorship, collaborations, and interesting problems. Reach out any time.
         </p>
 
         <div className="mt-5 flex flex-wrap items-center justify-center gap-3">

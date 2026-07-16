@@ -10,7 +10,7 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata: Metadata = {
   title: "Nitya Patel",
   description:
-    "Portfolio of Nitya Patel, Computer Engineering student at the University of Maryland and Systems & Software Engineering Intern at Lockheed Martin.",
+    "Portfolio of Nitya Patel, Computer Engineering student at the University of Maryland",
 };
 
 export default function RootLayout({
