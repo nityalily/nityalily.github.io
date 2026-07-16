@@ -42,8 +42,8 @@ export default function Projects() {
                 {isOpen && (
                   <div className="border-t border-border px-4 pb-4 pt-3.5 sm:px-5">
                     <div className="flex flex-col justify-between gap-1 sm:flex-row sm:items-baseline">
-                      <p className="text-sm text-muted">{project.role}</p>
-                      <p className="whitespace-nowrap font-mono text-sm text-muted">
+                      <p className="text-sm font-semibold">{project.role}</p>
+                      <p className="whitespace-nowrap text-sm text-muted">
                         {project.dates}
                       </p>
                     </div>

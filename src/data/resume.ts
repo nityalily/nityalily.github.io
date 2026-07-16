@@ -1,9 +1,8 @@
 export const profile = {
   name: "Nitya Patel",
-  program: "Computer Engineering B.S @ University of Maryland, College Park, expected Spring 2027",
-  state: "Maryland",
-  tagline:
-    "Systems & software engineer building at the intersection of embedded hardware, mobile apps, and AI.",
+  program: "Computer Engineering B.S @ University of Maryland, College Park",
+  state: "Based in Maryland",
+  tagline: "Systems and Software Engineer",
   email: "nityalily@gmail.com",
   linkedin: "https://linkedin.com/in/nityalily",
   github: "https://github.com/nityalily",
@@ -24,6 +23,10 @@ export const extracurriculars = [
     note: "Member supporting women in engineering through community and professional development.",
   },
   {
+    title: "Engineering Career Services Peer Assistant",
+    note: "Help students with resume reviews, job search strategies, and career advice, and help lead career workshops and events.",
+  },
+  {
     title: "Dean's List",
     note: "Recognized for academic excellence, 2025, 2026.",
   },
@@ -36,11 +39,11 @@ export const extracurriculars = [
 export const experience = [
   {
     company: "Lockheed Martin",
-    role: "Systems and Software Engineer",
+    role: "Systems and Software Engineering Intern",
     location: "Mount Laurel, NJ",
     dates: "June 2026 – Present",
     summary:
-      "Developing Java Spring Boot services for mission-critical defense systems, with CI/CD pipelines and Linux workflows in Agile teams.",
+      "C3 Software team under the Rotary and Mission Systems (RMS) department. Working in Java and C/C++ on defense systems.",
   },
   {
     company: "Optimoz Inc.",
@@ -48,7 +51,7 @@ export const experience = [
     location: "Rockville, MD",
     dates: "June 2025 – Aug 2025",
     summary:
-      "Built a React Native voice-memo app with live waveform visualization and LLM-powered SOAP notes, backed by a FHIR-compliant Dockerized backend.",
+      "Built a React Native voice-memo recorder with AI transcription and LLM-powered SOAP notes, backed by a FHIR-compliant Dockerized backend.",
   },
 ];
 
@@ -59,14 +62,14 @@ export const projects = [
     dates: "Jan 2025 – Present",
     summary:
       "Led sprint planning and cross-team coordination while building 20+ Kotlin/Compose and Swift interfaces with ArcGIS geofencing, shipped to the Apple and Play Store.",
-    tags: ["Kotlin", "Compose", "Swift", "ArcGIS", "iOS", "Android"],
+    tags: ["Kotlin", "Swift", "ArcGIS", "Compose", "iOS", "Android"],
   },
   {
     name: "Weapon Watch App",
     role: "xFoundry Competition 2025",
     dates: "Aug 2024 – Sept 2025",
     summary:
-      "Built a real-time weapon detection and alerting system for K–12 schools using Python, machine learning, and React Native; finaled at the Nexplore 2040 Summit.",
+      "Built a real-time weapon detection and alerting system for K–12 schools using Python, machine learning, and React Native; placed 1st in sales pitch and 3rd in business plan, finaled at the Nexplore 2040 Summit.",
     tags: ["Python", "Machine Learning", "React Native", "Firebase"],
   },
   {
@@ -74,7 +77,7 @@ export const projects = [
     role: "Engineering Design @ UMD",
     dates: "Aug 2023 – Dec 2023",
     summary:
-      "Designed and built an embedded C/C++ Arduino vehicle with motor control, depth sensing, and conductivity probing, placing top 10 of 80 teams.",
+      "Designed and built an embedded C/C++ Arduino vehicle with motor control, depth sensing, and conductivity probing, earning a nomination for Best Constructed Vehicle Award for innovative custom components. Placed top 10 of 80 teams.",
     tags: ["C/C++", "Arduino", "Embedded Systems", "CAD"],
   },
 ];

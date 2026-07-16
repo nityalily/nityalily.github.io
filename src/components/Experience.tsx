@@ -13,9 +13,9 @@ export default function Experience() {
             <div className="grid gap-1 border-b border-border pb-4 last:border-0 sm:grid-cols-[minmax(0,1fr)_minmax(0,1.1fr)] sm:gap-6">
               <div>
                 <h3 className="text-sm font-semibold">
-                  {job.role} <span className="font-normal text-muted">@ {job.company}</span>
+                  {job.role} <span>@ {job.company}</span>
                 </h3>
-                <p className="mt-1 font-mono text-sm text-muted">{job.dates}</p>
+                <p className="mt-1 text-sm text-muted">{job.dates}</p>
               </div>
               <p className="text-sm leading-relaxed text-muted">{job.summary}</p>
             </div>

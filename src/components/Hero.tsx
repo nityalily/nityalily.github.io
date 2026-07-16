@@ -18,7 +18,7 @@ export default function Hero() {
           <span className="term-dot" />
           <span className="term-dot" />
           <span className="term-dot" />
-          <span className="ml-2 font-mono text-sm text-muted">
+          <span className="ml-2 text-sm text-muted">
             ~/nitya-patel &mdash; zsh
           </span>
         </div>
@@ -28,18 +28,17 @@ export default function Hero() {
 
           <h1 className="text-3xl font-bold tracking-tight sm:text-4xl">
             Nitya Patel
-            <span className="cursor-blink font-mono text-accent">_</span>
+            <span className="cursor-blink text-accent">_</span>
           </h1>
 
-          <p className="mt-2 font-mono text-sm text-muted">
-            <span className="font-bold text-accent">&gt;</span> {profile.program}
+          <p className="mt-2 text-sm text-foreground/85">
+            <span className="font-bold text-accent">&gt;</span> {profile.tagline}
           </p>
-          <p className="mt-1 font-mono text-sm text-muted">
+          <p className="mt-1 text-sm text-foreground/85">
             <span className="font-bold text-accent">&gt;</span> {profile.state}
           </p>
-
-          <p className="mt-3 max-w-lg text-sm leading-relaxed text-foreground/85">
-            {profile.tagline}
+          <p className="mt-1 text-sm text-foreground/85">
+            <span className="font-bold text-accent">&gt;</span> {profile.program}
           </p>
 
           <div className="mt-5 flex flex-wrap items-center gap-2.5">

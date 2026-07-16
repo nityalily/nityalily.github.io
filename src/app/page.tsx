@@ -7,7 +7,7 @@ import Contact from "@/components/Contact";
 
 export default function Home() {
   return (
-    <main className="mx-auto flex max-w-3xl flex-col gap-6 px-6 pb-16 sm:flex-row sm:gap-10">
+    <main className="mx-auto flex max-w-4xl flex-col gap-6 px-8 pb-16 sm:flex-row sm:gap-14 sm:px-12">
       <SideNav />
       <div className="min-w-0 flex-1">
         <Hero />
