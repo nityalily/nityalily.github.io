@@ -1,11 +1,19 @@
 "use client";
 
 import { useState } from "react";
-import { Plus } from "lucide-react";
+import { Apple, ExternalLink, Plus } from "lucide-react";
 import { projects } from "@/data/resume";
 import Reveal from "@/components/Reveal";
 import SectionHeader from "@/components/SectionHeader";
 import Tag from "@/components/Tag";
+import ProjectSlideshow from "@/components/ProjectSlideshow";
+import { GithubIcon } from "@/components/icons";
+
+function LinkIcon({ type }: { type: "github" | "figma" | "appstore" }) {
+  if (type === "github") return <GithubIcon size={14} />;
+  if (type === "appstore") return <Apple size={14} />;
+  return <ExternalLink size={14} />;
+}
 
 export default function Projects() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
@@ -55,6 +63,25 @@ export default function Projects() {
                         <Tag key={tag}>{tag}</Tag>
                       ))}
                     </div>
+                    {project.links && (
+                      <div className="mt-3 flex flex-wrap gap-3">
+                        {project.links.map((link) => (
+                          <a
+                            key={link.href}
+                            href={link.href}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="flex items-center gap-1.5 text-sm text-muted transition-colors hover:text-accent"
+                          >
+                            <LinkIcon type={link.type} />
+                            {link.label}
+                          </a>
+                        ))}
+                      </div>
+                    )}
+                    {project.media && (
+                      <ProjectSlideshow media={project.media} />
+                    )}
                   </div>
                 )}
               </div>

@@ -17,6 +17,17 @@ export default function Extracurriculars() {
           </Reveal>
         ))}
       </div>
+
+      <Reveal className="card-border mt-8 rounded-2xl px-6 py-8 text-center sm:px-8">
+        <h3 className="text-sm font-semibold">Let&apos;s build something together.</h3>
+        <p className="mx-auto mt-2 max-w-md text-sm text-muted">
+          Open to mentorship, collaborations, and interesting problems. Reach out any time.
+        </p>
+      </Reveal>
+
+      <footer className="mt-8 flex flex-col items-center gap-2 text-sm text-muted">
+        <p>© {new Date().getFullYear()} Nitya Patel. Built with Next.js.</p>
+      </footer>
     </section>
   );
 }

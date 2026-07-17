@@ -55,7 +55,28 @@ export const experience = [
   },
 ];
 
-export const projects = [
+type ProjectLink = {
+  label: string;
+  href: string;
+  type: "github" | "figma" | "appstore";
+};
+
+type ProjectMedia = {
+  type: "image" | "video";
+  src: string;
+};
+
+type Project = {
+  name: string;
+  role: string;
+  dates: string;
+  summary: string;
+  tags: string[];
+  links?: ProjectLink[];
+  media?: ProjectMedia[];
+};
+
+export const projects: Project[] = [
   {
     name: "TestuGo",
     role: "UI/UX Lead — Vertically Integrated Project (VIP) @ UMD",
@@ -63,6 +84,18 @@ export const projects = [
     summary:
       "Led sprint planning and cross-team coordination while building 20+ Kotlin/Compose and Swift interfaces with ArcGIS geofencing, shipped to the Apple and Play Store.",
     tags: ["Kotlin", "Swift", "ArcGIS", "Compose", "iOS", "Android"],
+    links: [
+      {
+        label: "Design",
+        href: "https://figma.com/design/Wdi2M4xVYF2RpZ7MOSfE34/TestuGo-2.0?node-id=0-1",
+        type: "figma",
+      },
+      {
+        label: "App Store",
+        href: "https://apps.apple.com/us/app/testugo/id6745102681",
+        type: "appstore",
+      },
+    ],
   },
   {
     name: "Weapon Watch App",
@@ -71,6 +104,27 @@ export const projects = [
     summary:
       "Built a real-time weapon detection and alerting system for K–12 schools using Python, machine learning, and React Native; placed 1st in sales pitch and 3rd in business plan, finaled at the Nexplore 2040 Summit.",
     tags: ["Python", "Machine Learning", "React Native", "Firebase"],
+    links: [
+      {
+        label: "Design",
+        href: "https://www.figma.com/design/Nfbz2wCleAJJdD7WW4pb6J/Weapon-Watch?node-id=0-1&p=f",
+        type: "figma",
+      },
+      {
+        label: "App Repo",
+        href: "https://github.com/gracelcai/weapon-watch-app",
+        type: "github",
+      },
+      {
+        label: "Cameras Repo",
+        href: "https://github.com/JoeyLee-22/weapon-watch-cameras",
+        type: "github",
+      },
+    ],
+    media: [
+      { type: "image", src: "/projects/weapon-watch/xfoundry1.jpg" },
+      { type: "image", src: "/projects/weapon-watch/xfoundry2.jpg" },
+    ],
   },
   {
     name: "Over Terrain Vehicle",
@@ -79,5 +133,11 @@ export const projects = [
     summary:
       "Designed and built an embedded C/C++ Arduino vehicle with motor control, depth sensing, and conductivity probing, earning a nomination for Best Constructed Vehicle Award for innovative custom components. Placed top 10 of 80 teams.",
     tags: ["C/C++", "Arduino", "Embedded Systems", "CAD"],
+    media: [
+      { type: "video", src: "/projects/otv/otv1.mp4" },
+      { type: "image", src: "/projects/otv/otv2.jpg" },
+      { type: "image", src: "/projects/otv/otv3.jpeg" },
+      { type: "image", src: "/projects/otv/otv4.jpeg" },
+    ],
   },
 ];
