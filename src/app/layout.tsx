@@ -10,7 +10,7 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata: Metadata = {
   title: "Nitya Patel",
   description:
-    "Portfolio of Nitya Patel, Computer Engineering student at the University of Maryland and Systems & Software Engineering Intern at Lockheed Martin.",
+    "Portfolio of Nitya Patel, Computer Engineering student at the University of Maryland",
 };
 
 export default function RootLayout({
@@ -19,7 +19,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />

@@ -4,14 +4,14 @@ const links = [
   { href: "#experience", label: "Experience" },
   { href: "#projects", label: "Projects" },
   { href: "#extracurriculars", label: "Beyond class" },
-  { href: "#contact", label: "Contact" },
+  { href: "#game", label: "Game" },
 ];
 
 export default function SideNav() {
   return (
     <nav className="flex shrink-0 items-center gap-4 overflow-x-auto pt-6 sm:sticky sm:top-8 sm:h-fit sm:w-32 sm:flex-col sm:items-start sm:gap-3 sm:overflow-visible sm:pt-9">
-      <a href="#top" className="whitespace-nowrap text-sm font-semibold text-foreground">
-        NP<span className="text-accent">.</span>
+      <a href="#top" className="shrink-0">
+        <img src="/favicon.ico" alt="Nitya Patel" className="h-7 w-7 rounded-md" />
       </a>
       {links.map((link) => (
         <a
