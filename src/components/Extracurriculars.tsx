@@ -1,6 +1,7 @@
 import { extracurriculars } from "@/data/resume";
 import Reveal from "@/components/Reveal";
 import SectionHeader from "@/components/SectionHeader";
+import BugSquash from "@/components/BugSquash";
 
 export default function Extracurriculars() {
   return (
@@ -16,6 +17,13 @@ export default function Extracurriculars() {
             </div>
           </Reveal>
         ))}
+      </div>
+
+      <div id="game" className="mt-8">
+        <SectionHeader eyebrow="Game" />
+        <Reveal>
+          <BugSquash />
+        </Reveal>
       </div>
 
       <Reveal className="card-border mt-8 rounded-2xl px-6 py-8 text-center sm:px-8">

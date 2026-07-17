@@ -4,6 +4,7 @@ const links = [
   { href: "#experience", label: "Experience" },
   { href: "#projects", label: "Projects" },
   { href: "#extracurriculars", label: "Beyond class" },
+  { href: "#game", label: "Game" },
 ];
 
 export default function SideNav() {
